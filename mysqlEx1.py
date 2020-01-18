@@ -1,9 +1,6 @@
 import pymysql
 
-# DB 접속하기.
-db = pymsql.connect(host='localhost', port=3306, user='root', passwd="9755", db='mkyu', charset='utf8')
-
-
+db = pymysql.connect(host='localhost', port=3306, user='root', passwd="9755", db='mkyu', charset='utf8')
 
 # Cursor 가져오기
 cursor = db.cursor()
