@@ -1,3 +1,4 @@
+# google 번역 라이브러리
 from googletrans import Translator
 
 dave = Translator()
