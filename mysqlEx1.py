@@ -7,7 +7,7 @@ cursor = db.cursor()
 
 # SQL query 작성
 # sql = """
-#     create table fetish (
+#     create table product (
 #         id int unsigned not null auto_increment,
 #         name varchar(10) not null,
 #         model_num varchar(20) not null,
@@ -15,10 +15,10 @@ cursor = db.cursor()
 #         primary key(id)
 #         );
 # """
-
+#
 sql = """
-    insert into fetish(name,model_num,model_type) values (
-        'stocking', 'gs25', '고탄력');
+    insert into product(name,model_num,model_type) values (
+        '새우깡', 'gs25', 'gsitm');
 """
 
 # query 실행하기
