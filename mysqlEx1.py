@@ -6,14 +6,19 @@ db = pymysql.connect(host='localhost', port=3306, user='root', passwd="9755", db
 cursor = db.cursor()
 
 # SQL query 작성
+# sql = """
+#     create table fetish (
+#         id int unsigned not null auto_increment,
+#         name varchar(10) not null,
+#         model_num varchar(20) not null,
+#         model_type varchar(10) not null,
+#         primary key(id)
+#         );
+# """
+
 sql = """
-    create table fetish (
-        id int unsigned not null auto_increment,
-        name varchar(10) not null,
-        model_num varchar(20) not null,
-        model_type varchar(10) not null,
-        primary key(id)
-        );
+    insert into fetish(name,model_num,model_type) values (
+        'stocking', 'gs25', '고탄력');
 """
 
 # query 실행하기
