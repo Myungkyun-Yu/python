@@ -15,14 +15,13 @@ cursor = db.cursor()
 #         primary key(id)
 #         );
 # """
-#
-sql = """
-    insert into product(name,model_num,model_type) values (
-        '새우깡', 'gs25', 'gsitm');
-"""
 
-# query 실행하기
-cursor.execute(sql)
+# for 문을 이용하여 database 에 데이터 insert 하기.
+for index in range(10):
+    product_code = 10001 + index + 1
+    sql = """ insert into product values (
+        '""" + str(product_code) + """', '새우깡', 'gs25', '농심')""";
+    cursor.execute(sql)
 
 # commit
 db.commit()
